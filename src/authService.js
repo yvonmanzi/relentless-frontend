@@ -16,7 +16,10 @@ const register = async (username, email, password) => {
 
 const login = async (username, password) => {
   try {
-    response = await axios.post(`${API_URL}login/`, { username, password });
+    const response = await axios.post(`${API_URL}login/`, {
+      username,
+      password,
+    });
     if (response.data.access) {
       localStorage.setItem("user", JSON.stringify(response.data));
     }
