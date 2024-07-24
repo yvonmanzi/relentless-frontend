@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import login from "../authService.js";
 
-const LoginForm = () => {
+const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
@@ -71,4 +71,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default Login;
