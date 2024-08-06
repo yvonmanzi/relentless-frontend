@@ -6,6 +6,7 @@ import Dashboard from "./components/Dashboard";
 import Login from "./components/Login.js";
 import Home from "./components/Home.js";
 import Register from "./components/Register.js";
+import ProductList from "./components/ProductList.js";
 
 const isAuthenticated = !!localStorage.getItem("user");
 
@@ -14,6 +15,7 @@ const App = () => (
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Home />} />
+      <Route path="/productList" element={<ProductList />} />
       <Route
         path="/dashboard"
         element={
